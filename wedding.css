@@ -1,0 +1,328 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+header{
+ 
+    height:100vh;
+    width:100%;
+    background:url(images/bg1.jpg) no-repeat center;
+    background-size:cover;
+    display:flex;
+    flex-direction: column;
+}
+.navbar{
+    display: flex;
+}
+.logo{
+    color:white;
+    margin-left:100px;
+    height:90px;
+    width:200px;
+    margin-top:2em;
+}
+nav{
+color:white;
+margin-left:40%;
+margin-top:2em;
+ 
+}
+nav ul{
+    display: flex;
+     flex-direction:row;
+    /* padding:1em; */
+    text-decoration: none;
+}
+nav ul li{
+     padding:1rem;
+    list-style-type:none;
+}
+
+.heading{
+    margin-top:10%;
+    color:white;
+    text-align:center;
+}
+.heading h1{
+    font-size:45px;
+}
+ button{
+    background: #f70255;
+    color: #fff;
+    letter-spacing:1px;
+    border: none;
+    padding: 15px 23px;
+    margin-top:40px;
+}
+
+/* about us */
+.about{
+    display:flex;
+    flex-direction: row;
+}
+.about-image{
+  
+    height:400px;
+   width:100%;
+   margin-right:5em;
+   margin-top:-40px;
+} 
+.about-header{
+    width:60%;
+    margin:4rem auto;
+
+}
+.about-header h2{
+    margin-bottom:3rem;
+    font-size:2.5em;
+}
+.about-header p{
+font-size:1rem;
+letter-spacing:2px;
+}
+.about-image img{
+    width:100%;
+    border:10px solid black;
+}
+
+
+/* services */
+.services{
+    display: flex;
+    flex-direction:column;
+    margin-top:20px;
+}
+.services-head{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:40px;
+}
+.services-boxs{
+    display:flex;
+    flex-direction: row; 
+    margin:10px auto;
+    margin-left:5%;
+}
+
+.services-box{
+ height:250px;
+background-color:#EDEEEF;
+PADDING:64PX 32PX;
+width:30%;
+margin-left:3%;
+text-align: center;
+
+}
+.services-box h3{
+    margin:20px 0;
+}
+.services-box p{
+    font-size:20px;
+    letter-spacing:2px;
+}
+.actives{
+    background-color:#e8b15b;
+    
+}
+.actives h3{
+    color:white;
+
+}
+.services-box:hover{
+background-color:#e8b15b;
+}
+
+/* services2 */
+.services2{
+    display:flex;
+    margin:0 auto;
+    background:url("images/bg2.jpg");
+    background-attachment: fixed;
+    width:100%;
+    height:auto;
+    margin-top:50px;
+  
+
+}
+.services-desc{
+    width:35%;
+    margin-left:10%;
+    margin-top:10%;
+    margin-right:2%;
+}
+.services-desc h1{
+    color:white;
+    font-size:2rem;
+    margin-bottom:10px;
+}
+.services-desc p{
+    color:white;
+    font-size:1.2rem;
+    letter-spacing:2px;
+}
+.services-boxs2{
+    display:flex;
+    width:43%;
+    margin-right:5%;
+  
+}
+.services-box2{
+    background: #fff;
+    margin:5%;
+    PADDING:50px 32PX;
+   
+}
+.services-box2 h3{
+margin:5px 0;
+}
+.services-box2 p{
+   letter-spacing:2px;
+ }
+.services-box-column1{
+    display:flex;
+    flex-direction: column;
+    margin-top:18%;
+}
+.services-box-column2{
+    display:flex;
+    flex-direction: column;
+    margin-top:10%;
+}
+.icon{
+    color:#f70255;
+}
+
+/* advantages */
+.advantages{
+    display:flex;
+    flex-direction: column;
+    margin:50px 0;
+}
+.adva-header{
+    text-align:center;
+    font-size:2.5em;
+    margin:50px 0;
+}
+.adv-sec-one{
+    display:flex;
+    width:80%;
+    margin:2rem auto;
+}
+.common{
+width:50%;
+margin:5%;
+font-size:1rem;
+letter-spacing: 2px;
+}
+.adv-sec-desc1{
+    margin-left:20%;
+}
+.common h2{
+font-size:2.5rem;
+}
+.common h4{
+color:red;
+}
+ .common p{
+ font-size:1.2rem;
+letter-spacing: 1px; 
+}
+        
+.adv-sec-image1 img{
+    width:70%;
+    border-radius:50%;
+    margin-left: 40%;
+}
+.adv-sec-image2 img{
+width:100%;
+height:350px;
+}
+
+/* //footer */
+footer{
+    height:45px;
+    display:flex;
+    background:black;
+    color:white;
+}
+.footer-content{
+margin-left:200px;
+line-height:50px;
+}
+.footer-icons{
+margin-left:25%;
+margin-top:8px;
+display: block;
+border-radius: 50%;
+background: transparent;
+}
+.checkbtn.active{
+    display:none;
+}
+nav{
+    display:none; 
+ }
+
+ .nav.active{
+     display:block;
+ }
+
+.footer-icons i{
+    margin: 0 1rem;
+}
+/* toggle the button of navbar */
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    line-height:70px;
+   cursor: pointer;
+    display: none; 
+   margin-left:10px;
+   top:30px;
+   position:absolute;
+   }
+   nav{
+       display:block;
+   }
+@media(max-width:800px){
+    .about,.adv-sec-one,.navbar{
+        display:flex;
+        flex-direction:column;
+    }
+    .about-image{
+        width:90%;
+        height:auto;
+    }
+    .services-boxs,.services-boxs2{
+        display:flex;
+        flex-direction: column;
+        width:90%;
+        display:block;
+        margin:0 auto;
+     
+    }
+    .checkbtn{
+        display:block;
+    }
+    nav{
+        display:none;
+        margin:0;
+    }
+    .services2{
+        display:flex;
+        flex-direction: column;
+        width:90%;
+    }
+    .services-box,.about-header{
+        width:100%;
+        text-align:center;
+    }
+    .logo{
+        margin-left:50px;
+    }
+    .footer-content,.common{
+        margin:0;
+    }
+}
