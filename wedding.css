@@ -287,6 +287,11 @@ nav{
        display:block;
    }
 @media(max-width:800px){
+    .about-header{
+    
+    widtg:50%;
+    font-size:2rem;
+    }
 header{
     width:97%;
     margin:0 auto;
