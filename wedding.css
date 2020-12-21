@@ -123,6 +123,10 @@ header.sticky .navigation li a:hover{
     position:relative;
     width:48%;
 }
+.row .col50 p{
+   font-size:1.3em;
+   margin-top:15px;
+}
 .row .col50 .imgBx{
 position:relative;
 width:100%;
