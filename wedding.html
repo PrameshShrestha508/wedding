@@ -10,45 +10,36 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
-                
-            <div class="logo">
-                <h1>W-PLANNER</h1>
-            </div>
-            
-            <nav class="nav">
-                <ul>
-                    <li>HOME</li>
-                    <li>ABOUT</li>
-                    <li>DROPDOWN</li>
-                    <li>CONTACT US</li>
-                </ul>
-            </nav>
-            
-         </div>
-         <div class="checkbtn">
-                <i class="fas fa-bars checkbtn"></i>
-        </div>
-         
-        <div class="heading">
-             <h1>DESTINATION WEDDINGS</h1>
-             <button>Know More</button>
-        </div>
-
+        <a href="#" class="logo"><span>W</span>-PLANNER</a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#advantages">Advantages</a></li>
+        </ul>
     </header>
-    <section id="about" class="about">
-        <div class="about-content">
-            <div class="about-header">
-                <h2>Our Weddings Story</h2>
-                <p>Vivamus sed porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis 
-                    egestas.Sed lorem enim, Vivamus sed porttitor felis. 
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Sed lorem enim,</p>
-            </div>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>DESTINATION WEDDINGS</h2>
+       <a href="#" class="btn">Know More</a>
         </div>
-            <div class="about-image">
-                <img src="images/1.jpg">
-            </div>
     </section>
+    <section class="#about" id="about">
+            <div class="row">
+                <div class="col50">
+                    <h2 class="titleText"><span>O</span>ur Weddings Story</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nihil ipsam fugiat necessitatibus sunt ea omnis voluptatem, voluptatum consectetur adipisci ex ipsa cum soluta molestiae laborum totam quisquam velit! Laudantium.</p>
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quod quae placeat facere nihil ab, eligendi ratione molestiae cumque laboriosam deserunt, maiores asperiores a eius expedita aperiam repudiandae ipsam vitae?
+                </div>
+                <div class="col50">
+                    <div class="imgBx">
+                        <img src="images/1.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
     <section id="services" class="services">
         <div class="services-head">
             <h2>We Will Plan</h2>
@@ -105,7 +96,7 @@
              </div>
         </div>
     </section>
-    <section class="advantages">
+    <section class="advantages" id="advantages">
         <div class="adva-header">
             <h1>Our Advantages</h1>
         </div>
@@ -136,25 +127,20 @@
 
 
     </section>
-    <footer>
-        <div class="footer-content">
-        <p>© 2019 Wedding Planner. All Rights Reserved | Design by W3layouts</p>
+    <div class="copyrightText">
+            <p>Copyright 2020 <a href="">Prameshshrestha455@gmail.com</a>.All rights Reserved</p>
         </div>
-        <div class="footer-icons">
-                <i class="fab fa-facebook fa-2x"></i>
-                <i class="fab fa-twitter fa-2x"></i>
-                <i class="fab fa-google-plus-g fa-2x"></i>
-                <i class="fab fa-linkedin-in fa-2x"></i>
-        </div>
-    </footer>
     <script>
-            var checkbtn = document.querySelector('.checkbtn');
-            var nav = document.querySelector('.nav');
-            
-            checkbtn.addEventListener('click',function(){
-               nav.classList.toggle('active')
-            
-            })
+         window.addEventListener('scroll',function(){
+            const header=document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY>0);
+        });
+           function toggleMenu(){
+            const menuToggle=document.querySelector(".menuToggle");
+            const navigation=document.querySelector(".navigation");
+            menuToggle.classList.toggle("active");
+            navigation.classList.toggle("active");
+        }
             
             
             </script>
