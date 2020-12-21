@@ -361,7 +361,12 @@ height:350px;
         font-size:3em;
     }
     .row{
+        position: relative;
+        width:90%;
+        margin:10px auto;
+        display:flex;
         flex-direction: column;
+        justify-content:space-between;
     }
     .row .col50{
         width:100%;
